@@ -1,0 +1,11 @@
+:_module-type: CONCEPT
+
+[id="con_devworkspace_{context}"]
+= DevWorkspace
+
+[role="_abstract"]
+
+[role="_additional-resources"]
+.Additional resources
+
+

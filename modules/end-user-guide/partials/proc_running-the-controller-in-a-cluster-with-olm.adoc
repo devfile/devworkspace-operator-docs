@@ -1,0 +1,17 @@
+:_module-type: PROCEDURE
+
+[id="proc_running-the-controller-in-a-cluster-with-olm_{context}"]
+= Running the controller in a cluster with OLM
+
+[role="_abstract"]
+
+.Prerequisites
+
+.Procedure
+
+.Verification
+
+[role="_additional-resources"]
+.Additional resources
+
+
