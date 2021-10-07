@@ -31,7 +31,7 @@ components:
       - name: Open-Preview-server
         port: 4000
         attributes:
-          path: /che-7/overview/introduction-to-eclipse-che/
+          path: /docs/end-user-guide/introduction/
   - alias: vale
     type: chePlugin
     preferences:

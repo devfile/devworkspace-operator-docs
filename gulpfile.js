@@ -20,10 +20,17 @@ const yaml = require('js-yaml')
 const playbookFilename = 'antora-playbook-for-development.yml'
 const playbook = yaml.safeLoad(fs.readFileSync(playbookFilename, 'utf8'))
 const outputDir = (playbook.output || {}).dir || './build/site'
-const serverConfig = { name: 'Preview Site', livereload, host: '0.0.0.0', port: 4000, root: outputDir }
+const watchBuild = outputDir + '/**'
+const serverConfig = {
+    host: '0.0.0.0',
+    livereload: true,
+    name: playbook.site.title,
+    port: 4000,
+    root: outputDir
+}
 const antoraArgs = ['--playbook', playbookFilename]
 const watchPatterns = playbook.content.sources.filter((source) => !source.url.includes(':')).reduce((accum, source) => {
-    accum.push(`./antora.yml`)
+    accum.push(`./*.yml`)
     accum.push(`./modules/**/*`)
     return accum
 }, [])

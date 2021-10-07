@@ -11,4 +11,4 @@
 # Fail on errors and display commands
 set -ex
 
-LIVERELOAD=true gulp
+LIVERELOAD=true gulp --continue
