@@ -1,0 +1,24 @@
+// Metadata for Antora
+:navtitle: Running with YAML
+:keywords: running, yaml
+// :page-aliases: old-introduction
+// End of metadata for Antora
+
+:parent-context-of-introduction: {context}
+
+[id="assembly_running-the-controller-in-a-cluster-with-yaml-resources_{context}"]
+= Running the controller in a cluster with YAML resources
+
+:context: introduction
+
+// [role="_abstract"]
+
+// == Prerequisites
+
+include::partial$proc_running-the-controller-in-a-cluster-with-yaml-resources.adoc[leveloffset=+1]
+
+// [role="_additional-resources"]
+// == Additional resources (or Next steps)
+
+:context: {parent-context-of-introduction}]
+

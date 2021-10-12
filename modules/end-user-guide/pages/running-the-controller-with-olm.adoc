@@ -1,0 +1,25 @@
+// Metadata for Antora
+:navtitle: Running with OLM
+:keywords: running, olm
+// :page-aliases: old-introduction
+// End of metadata for Antora
+
+:parent-context-of-introduction: {context}
+
+[id="assembly_running-the-controller-in-a-cluster-with-olm_{context}"]
+= Running the controller in a cluster with OLM
+
+
+:context: introduction
+
+// [role="_abstract"]
+
+// == Prerequisites
+
+include::partial$proc_running-the-controller-in-a-cluster-with-olm.adoc[leveloffset=+1]
+
+// [role="_additional-resources"]
+// == Additional resources (or Next steps)
+
+:context: {parent-context-of-introduction}]
+

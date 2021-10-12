@@ -1,0 +1,13 @@
+:_module-type: CONCEPT
+
+[id="con_devworkspace-operator_{context}"]
+= DevWorkspace Operator
+
+[role="_abstract"]
+The {devworkspace} Operator contains the controller for the {devworkspace} Custom Resource. 
+
+[role="_additional-resources"]
+.Additional resources
+
+* link:https://github.com/devfile/devworkspace-operator[{devworkspace} Operator repository]
+

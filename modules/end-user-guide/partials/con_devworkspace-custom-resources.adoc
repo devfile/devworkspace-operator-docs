@@ -1,0 +1,12 @@
+:_module-type: CONCEPT
+
+[id="con_devworkspace-custom-resources_{context}"]
+= DevWorkspace Custom Resources
+
+[role="_abstract"]
+
+
+[role="_additional-resources"]
+.Additional resources
+
+

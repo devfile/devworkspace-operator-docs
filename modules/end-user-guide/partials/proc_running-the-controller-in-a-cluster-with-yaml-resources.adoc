@@ -1,0 +1,17 @@
+:_module-type: PROCEDURE
+
+[id="proc_running-the-controller-in-a-cluster-with-yaml-resources_{context}"]
+= Running the controller in a cluster with YAML resources
+
+[role="_abstract"]
+
+.Prerequisites
+
+.Procedure
+
+.Verification
+
+[role="_additional-resources"]
+.Additional resources
+
+

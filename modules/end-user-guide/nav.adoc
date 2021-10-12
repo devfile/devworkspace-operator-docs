@@ -1,0 +1,5 @@
+.End-user guide
+
+* xref:introduction.adoc[]
+* xref:running-the-controller-with-olm.adoc[]
+* xref:running-the-controller-with-yaml-resources.adoc[]
