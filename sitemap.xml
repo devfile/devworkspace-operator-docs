@@ -2,18 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://devfile.github.io/devworkspace-operator-docs/docs/administration-guide/introduction/</loc>
-<lastmod>2021-10-12T08:30:51.314Z</lastmod>
+<lastmod>2021-10-12T10:27:04.366Z</lastmod>
 </url>
 <url>
 <loc>https://devfile.github.io/devworkspace-operator-docs/docs/end-user-guide/introduction/</loc>
-<lastmod>2021-10-12T08:30:51.314Z</lastmod>
+<lastmod>2021-10-12T10:27:04.366Z</lastmod>
 </url>
 <url>
 <loc>https://devfile.github.io/devworkspace-operator-docs/docs/end-user-guide/running-the-controller-with-olm/</loc>
-<lastmod>2021-10-12T08:30:51.314Z</lastmod>
+<lastmod>2021-10-12T10:27:04.366Z</lastmod>
 </url>
 <url>
 <loc>https://devfile.github.io/devworkspace-operator-docs/docs/end-user-guide/running-the-controller-with-yaml-resources/</loc>
-<lastmod>2021-10-12T08:30:51.314Z</lastmod>
+<lastmod>2021-10-12T10:27:04.366Z</lastmod>
 </url>
 </urlset>
