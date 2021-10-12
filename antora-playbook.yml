@@ -16,7 +16,7 @@
 site:
   title: DevWorkspace Operator Documentation
   # The url property is mandatory to generate the 404 and sitemap files.
-  url: https://devfile.github.io/devworkspace-operator-docs/
+  url: https://devfile.github.io/devworkspace-operator-docs
   start_page: docs::index.adoc
   keys:
     google_analytics: "UA-37306001-2"
