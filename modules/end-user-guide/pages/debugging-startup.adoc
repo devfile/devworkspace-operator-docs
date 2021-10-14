@@ -1,0 +1,24 @@
+// Metadata for Antora
+:navtitle: Debugging startup
+:keywords: debug, debugging
+// :page-aliases: old-introduction
+// End of metadata for Antora
+
+:parent-context-of-introduction: {context}
+
+[id="proc_debugging_startup_{context}"]
+= Debugging DevWorkspace startup
+
+:context: introduction
+
+// [role="_abstract"]
+
+// == Prerequisites
+
+include::partial$proc_debugging_startup.adoc[leveloffset=+1]
+
+// [role="_additional-resources"]
+// == Additional resources (or Next steps)
+
+:context: {parent-context-of-introduction}]
+

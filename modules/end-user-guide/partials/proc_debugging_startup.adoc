@@ -1,0 +1,24 @@
+:_module-type: PROCEDURE
+
+[id="proc_debugging_startup_{context}"]
+= Debugging DevWorkspace startup
+
+[role="_abstract"]
+If you want to learn more about why a workspace has entered a "failed" state when starting, you can add the following annotation to your devworkspace:
+	
+.Annotations for debugging devworkspace startup
+[cols="40,10,10,~"]
+|===
+|Annotation |Default| Required| Descriptionc
+
+|controller.devfile.io/debug-start
+|None
+|no
+|If you want to debug the startup of the DevWorkspace. If not specified or false, the DevWorkspace will not start in debug mode
+|===
+
+When the "controller.devfile.io/debug-start" annotation is set to true and the devworkspace enters a failed state, the devworkspace deployment will not scale down, allowing you to view logs and diagnose what happened.
+
+.Procedure
+
+* Add the `'controller.devfile.io/debug-start': 'true` annotation to a DevWorkspace that is failing to start

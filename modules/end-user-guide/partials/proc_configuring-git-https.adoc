@@ -1,0 +1,64 @@
+:_module-type: PROCEDURE
+
+[id="proc_configuring-git-https_{context}"]
+= Configuring git for https
+
+[role="_abstract"]
+Git https tokens can be mounted into your devworkspace. In order to do this, you must create a secret in your namespace with the following annotations and labels:
+
+.Annotations for configuring git https
+[cols="40,10,10,~"]
+|===
+|Annotation |Default| Required| Description
+
+|controller.devfile.io/mount-path
+|None
+|no
+|The path where you want the configmap to mount. If not specified and controller.devfile.io/mount-to-devworkspace is true, configmaps will mounted to /etc/secret/<configmap-name> and secrets will be mounted to /etc/secret/<secret-name>  
+|===
+
+.Labels for configuring git https
+[cols="40,10,10,~"]
+|===
+|Label |Default| Required| Description
+
+|controller.devfile.io/git-credential
+|None
+|yes
+|If the secret is a git credential. If the label is not specified or if the label is set to false the secret will not be considered a git credential and will not be mounted.
+|===
+
+When the DevWorkspace starts a gitconfig will be created automatically and mounted into `/etc/gitconfig`, pointing to the mounted git credentials.
+If multiple git credentials are available in the same namespace, they will be consolidated in a secret called git-credentials-secret.
+
+[NOTE]
+====
+* If you uninstall the DevWorkspace Operator any git credential secrets will have to be cleaned up manually, including the git-credentials-secret if it exists.
+* credentials is the only data key in the secret that the DevWorkspace Operator will use. Any other keys in the secret will be ignored.
+====
+
+.Procedure
+
+* Create a secret with the secrets credentials key field in the base64 representation of the git storage format. See https://git-scm.com/docs/git-credential-store#_storage_format.
+** E.g. Create a secret on the cluster with data.credentials containing the contents of 
+[source,bash]
+echo -n "https://{USERNAME}:{PERSONAL_ACCESS_TOKEN}@github.com" | base64
+
+* Define the label `'controller.devfile.io/git-credential': 'true'` in a secret with credentials as the key in data.
+
+.Configuring git credential
+====
+[source,yaml]
+apiVersion: v1
+kind: Secret
+metadata:
+  name: ${your name}
+  namespace: ${your namespace}
+  annotations:
+    controller.devfile.io/mount-path: /home/theia/.git-credentials/
+  labels:
+    controller.devfile.io/git-credential: 'true'
+data:
+  credentials: >- ${your base64 credentials here}
+type: Opaque
+====

@@ -1,0 +1,24 @@
+// Metadata for Antora
+:navtitle: Configuring git for https
+:keywords: git, https
+// :page-aliases: old-introduction
+// End of metadata for Antora
+
+:parent-context-of-introduction: {context}
+
+[id="proc_configuring-git-https_{context}"]
+= Configuring git for https
+
+:context: introduction
+
+// [role="_abstract"]
+
+// == Prerequisites
+
+include::partial$proc_configuring-git-https.adoc[leveloffset=+1]
+
+// [role="_additional-resources"]
+// == Additional resources (or Next steps)
+
+:context: {parent-context-of-introduction}]
+
