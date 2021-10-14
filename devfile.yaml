@@ -54,12 +54,12 @@ commands:
   - name: Start preview server
     actions:
       - type: exec
-        component: che-docs
+        component: antora-docs
         workdir: /projects/antora-docs
         command: sh tools/preview.sh
   - name: Validate links
     actions:
       - type: exec
-        component: che-docs
+        component: antora-docs
         workdir: /projects/antora-docs
         command: htmltest
