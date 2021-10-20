@@ -1,0 +1,8 @@
+[id="troubleshooting"]
+// = Troubleshooting
+
+:navtitle: troubleshooting
+:keywords: end-user-guide, troubleshooting
+:page-aliases: .:troubleshooting
+
+include::partial$assembly_troubleshooting.adoc[]

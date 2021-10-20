@@ -1,0 +1,14 @@
+:parent-context-of-devworkspace-configuration: {context}
+
+[id="devworkspace-configuration_{context}"]
+= Troubleshooting
+
+:context: devworkspace-configuration
+
+This section describes how to configure devworkspaces.
+
+* xref:configuring-git.adoc[]
+* xref:mounting-secrets-configmaps.adoc[]
+* xref:image-pull-secrets.adoc[]
+
+:context: {parent-context-of-devworkspace-configuration}

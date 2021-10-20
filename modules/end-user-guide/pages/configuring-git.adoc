@@ -1,13 +1,13 @@
 // Metadata for Antora
-:navtitle: Configure image pull secrets
-:keywords: secrets
+:navtitle: Configuring git
+:keywords: git, https
 // :page-aliases: old-introduction
 // End of metadata for Antora
 
 :parent-context-of-introduction: {context}
 
-[id="proc_image-pull-secrets_{context}"]
-= Image pull secrets
+[id="proc_configuring-git-https_{context}"]
+= Configuring git
 
 :context: introduction
 
@@ -15,7 +15,7 @@
 
 // == Prerequisites
 
-include::partial$proc_image_pull_secrets.adoc[leveloffset=+1]
+include::partial$proc_configuring-git.adoc[leveloffset=+1]
 
 // [role="_additional-resources"]
 // == Additional resources (or Next steps)

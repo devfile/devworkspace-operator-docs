@@ -1,7 +1,7 @@
 :_module-type: PROCEDURE
 
 [id="proc_configuring-git-https_{context}"]
-= Configuring git for https
+= Configuring git
 
 [role="_abstract"]
 Git https tokens can be mounted into your devworkspace. In order to do this, you must create a secret in your namespace with the following annotations and labels:

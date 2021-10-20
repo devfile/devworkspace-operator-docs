@@ -1,0 +1,8 @@
+[id="devworkspace-configuration"]
+// = DevWorkspace configuration
+
+:navtitle: DevWorkspace Configuration
+:keywords: end-user-guide, configuration
+:page-aliases: .:devworkspace-configuration
+
+include::partial$assembly_devworkspace-configuration.adoc[]
