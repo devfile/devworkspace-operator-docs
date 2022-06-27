@@ -1,9 +1,7 @@
 reviewers:
-  - sleshchenko
   - amisevsk
-  - jpinkney
+  - ibuziuk
 approvers:
-  - sleshchenko
   - amisevsk
-  - jpinkney
+  - ibuziuk
 component: DevWorkspace Operator
