@@ -27,7 +27,7 @@ jobs:
     container: "quay.io/eclipse/che-docs:latest"
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0 # Necessary for git diff in vale step
 
@@ -36,7 +36,7 @@ jobs:
         run: CI=true antora generate antora-playbook-for-development.yml --stacktrace 2>&1 | (tee | grep  WARNING && exit 42 || exit 0)
 
       - name: Upload artifact doc-content
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: doc-content
           path: build/site
@@ -47,19 +47,19 @@ jobs:
           echo "${{ github.event.pull_request.head.sha }}" > PR_SHA
 
       - name: Upload artifact pull-request-number for publish-netlify
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: pull-request-number
           path: PR_NUMBER
 
       - name: Upload artifact pull-request-sha for publish-netlify
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: pull-request-sha
           path: PR_SHA
 
       - name: Cache htmltest status code of checked external URLs # See: https://docs.github.com/en/actions/guides/caching-dependencies-to-speed-up-workflows
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         env:
           cache-name: cache-htmltest
         with:
