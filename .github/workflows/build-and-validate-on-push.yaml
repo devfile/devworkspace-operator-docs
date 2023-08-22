@@ -27,7 +27,7 @@ jobs:
     container: "quay.io/eclipse/che-docs:latest"
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
@@ -36,13 +36,13 @@ jobs:
         run: CI=true antora generate antora-playbook-for-development.yml --stacktrace
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: doc-content
           path: build/site
 
       - name: Cache htmltest status code of checked external URLs # See: https://docs.github.com/en/actions/guides/caching-dependencies-to-speed-up-workflows
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         env:
           cache-name: cache-htmltest
         with:

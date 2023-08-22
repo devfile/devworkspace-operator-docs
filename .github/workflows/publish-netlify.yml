@@ -73,7 +73,7 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
 
       - name: Comment the pull-request
-        uses: actions/github-script@v3.0.0
+        uses: actions/github-script@v6
         with:
           script: |
             const { repo: { owner, repo } } = context;
